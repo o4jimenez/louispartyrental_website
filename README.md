@@ -1,2 +1,2 @@
-# louispartyrental_website
+# Louis Party Rental
 Louis Party Rental Marketing Website
