@@ -9,14 +9,19 @@
 
 .main-text{
     font-size: 2rem;
-    color: rgb(57, 101, 245);
+    color: rgb(0, 100, 200);
     font-weight: bold;
     text-align: center;
     
 }
+.main-text>p{
+    margin: 16px 0px;
+}
+
+
 .minor-text{
-    font-size: 1rem;
-    color: rgb(51, 141, 141);
+    font-size: 1.1rem;
+    color: black;
 }
 
 .social-section{
@@ -30,3 +35,4 @@
 #home-img{
     width: 100%;
 }
+

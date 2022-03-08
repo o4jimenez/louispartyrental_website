@@ -2,34 +2,52 @@
 body{
     margin: 0px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    min-width: 600px;
+    min-width: 360px;
 }
 
 main{
     max-width: 1200px;
     margin: auto;
+    padding: 0px 20px;
 }
+/*--------------------------------- Navigation --------------------------------------*/
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    color: rgb(0, 100, 200);
+    border-bottom:rgb(0, 100, 200) solid 2px;
+}
+
+a:active{
+    color: rgb(4, 129, 255);
+}
+
+.current-page{
+    border-bottom: black solid 2px;
+}
+
 
 /*------------------------------- HEADER CSS ----------------------------------------------*/
 
 header{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-
-    width: 100%;
-    margin: auto;
-    min-height: 120px;
-    background-color: rgb(232, 241, 253);
+    border-bottom: solid rgba(0,0,0,0.5) 1px;
 }
 
 .popout-header{
+    position: sticky;
+    top: -40px;
     box-shadow: 5px 0px 10px black;
 }
 
 .banner{
     width: 100%;
-    background-color: rgb(117, 117, 218);
+    background-color: rgb(0, 100, 200);
 
     color: white;
     text-align: center;
@@ -44,10 +62,11 @@ nav{
     flex-flow: row wrap;
     min-height: 90px;
     margin: auto;
-    max-width: 1300px;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
 }
+
 ul{
     margin: 0px;
     padding: 0px;
@@ -70,13 +89,13 @@ h1{
 }
 
 #company-name{
-    color:rgb(117, 117, 218);
-    font-size: 2rem;
+    color:rgb(0, 100, 200);
+    font-size: 1.5rem;
 }
 
 @media (max-width: 550px){
     #company-name{
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 }
 
