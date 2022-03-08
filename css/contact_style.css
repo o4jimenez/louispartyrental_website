@@ -1,0 +1,58 @@
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+input{
+    background-color: rgb(240, 240, 240);
+    border: none;
+    width: 70%;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px 5px
+}
+label{
+    width: 30%;
+}
+
+.form-input{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-header{
+    text-align: center;
+    color: rgb(0, 100, 200);
+    font-size: 1.8rem;
+    border-bottom: solid 2px rgb(0, 100, 200, 0.5);
+}
+
+.form-submit{
+    align-self: center;
+}
+
+.flat-button{
+    margin: 10px 0px;
+    padding: 10px 30px;
+    background-color: rgb(0, 100, 200);
+    border-radius: 5px;
+    color: white;
+    border: 0px;
+    font-size: 1.2rem;
+}
+
+.company-info{
+    color:rgb(0, 100, 200);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 100px;
+}

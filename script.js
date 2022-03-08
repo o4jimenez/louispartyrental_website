@@ -1,16 +1,15 @@
 
 /* --------------------- Header Popout CSS ---------------------------------*/
-const sectionHeader = document.querySelector(".banner"); 
+const banner = document.querySelector(".banner"); 
 
 const pageHeader = document.querySelector("header");
-const main = document.querySelector("main");
 
 // large page
 
 var options = {
 };
 
-const mainObserver = new IntersectionObserver(function(entries, mainObserver){
+const bannerObserver = new IntersectionObserver(function(entries, mainObserver){
    entries.forEach(entry =>{
        console.log(options);
        if(!entry.isIntersecting) {
@@ -22,14 +21,14 @@ const mainObserver = new IntersectionObserver(function(entries, mainObserver){
 }, options);
 
 
-mainObserver.observe(sectionHeader);
+bannerObserver.observe(banner);
 
 /* --------------------------------------------------------------------------*/
 
 function openSection(){
     var a = $(this).attr('for');
-    var details = $('#'+a);
-    details.attr('open', !(details.attr('open')));
+    var section = $('#'+a);
+    section.attr('hidden', !(section.attr('hidden')));
 }
 
 $('.section-header').on('click', openSection);
