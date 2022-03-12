@@ -1,4 +1,3 @@
-
 :root {
     /*
     --background: #dfc662;
@@ -18,7 +17,7 @@
 /*---------------------- Basics --------------------*/
 html {
     box-sizing: border-box;
-    font-family: mon;
+    font-family: var(--maintext);
 }
 
 *, *::before, *::after {
@@ -38,7 +37,6 @@ body{
 
     font-family: var(--maintext);
     background: linear-gradient(0deg, var(--secondarybackground) 0%, var(--background) 100%);
-
 }
 
 main{

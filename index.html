@@ -4,52 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="jquery.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Montserrat&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=sap" rel="stylesheet"> 
+
+    <!--
     <link rel="stylesheet" href="/css/standard.css">
+    -->
+    <link rel="stylesheet" href="/css/style.css">
+
 
     <title>Document</title>
 </head>
 <body>
+
     <header>
-        <div class="banner">(805) 915-7089</div>
+        <div class="banner"><h3 id="banner-text">(805) 915-7089</h3></div>
+        <div class="nav-container">
         <nav>
-            <div id="company-name"><h1>Louis Party Rental</h1></div>
-            <div>
-                <ul>
-                    <li><a class="current-page" href="index.html">Home</a></li>
-                    <li><a href="catalog.html">Catalog</a></li>
-                    <li><a href="contact_page.html">Contact Us</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><h1><a href="#home-image" class="company-name">Louis Party Rental</a></h1></a></li>
+                <li><a class="current-page" href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact_page.html">Contact Us</a></li>
+            </ul>
         </nav>
+        </div>
     </header>
 
     <main>
         <div class="main-flexbox">
-            <div><img id="home-image" src="/images/home_banner.jpeg" alt="Party set-up with tent and jumper" id="home-img"></div>
-            <section class="main-text">
+            <div><img id="home-image" src="/images/home_banner.jpeg" alt="Party set-up with tent and jumper"></div>
+
+            <section class="section-major">
                 <h2>Welcome to Louis Party Rental</h2>
-                <h2>We provide Tents, Jumpers, Tables, Chairs, and more</h2>
+                <p>We provide Tents, Jumpers, Tables, Chairs, and more</p>
             </section>
-            <section class="minor-text">
-                <p>We are here for all your party rental needs. We take pride in providing the best customer service so your party runs smoothly. There is a $10.00 delivery charge for orders under $100 and $10 extra for orders outside of Simi Valley</p>
+
+            <section class="section-minor">
+                <p>
+                    We are here for all your party rental needs. We take pride in providing the best customer service so your party runs smoothly.
+                </p> 
+                <p>
+                    There is a $10.00 delivery charge for orders under $100 and $10 extra for orders outside of Simi Valley
+                </p>
             </section>
-            <section class="social-section">
-                <h3>Social</h3>
-                <ul class="social-list">
-                    <li><a href="https://www.facebook.com/louispartyrental"><img src="/images/Facebook_logo_36x36.svg" alt="facebook"></a></li>
-                </ul>
-            </section>
-        </main>
 
         </div>
+    </main>
+
     <footer>
-        <div>Copyright © 2019 Louis Party Rental - All Rights Reserved.</div>
+        <section class="section-socials">
+            <h2>Follow us on Facebook</h2>
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.facebook.com/louispartyrental">
+                    <img src="/images/Facebook_logo_36x36.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <p><small>&copy; 2019 Louis Party Rental - All Rights Reserved.</small></p>
     </footer>
+
     <script src="script.js"></script> 
     
 </body>
+
 </html>
