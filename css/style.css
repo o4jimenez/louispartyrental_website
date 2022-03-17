@@ -3,12 +3,17 @@
     --text-major: "Dosis", arial, sans-serif;
     --text-main: "Montserrat", verdana, sans-serif;
 
-    --background: rgb(231, 241, 253);
+    --background: rgb(248, 248, 242);
     --secondarybackground: rgb(230, 230, 230);
 
-    --primarycolor: #d63b4b;
-    --secondarycolor: rgb(57, 69, 185);
+    --primarycolor: #df3f4f;
+    --secondarycolor: #3541ad;
     --accentcolor: #fabc36;
+    /*
+    --primarycolor: #d63b4b;
+    --accentcolor: rgb(57, 69, 185);
+    --secondarycolor: #fabc36;
+    */
 
     --font-size: 1.3rem;
 }
@@ -56,9 +61,9 @@ a:hover {
     background-color: var(--accentcolor);
 }
 
-
 nav {
-    padding: 1rem;
+    padding: 0.5rem;
+
 }
 
 .nav-container {
@@ -70,7 +75,8 @@ nav ul, footer ul {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
     
     list-style-type: none;
     padding: 0;
@@ -89,7 +95,7 @@ nav li:first-child {
 }
 .company-name {
     font-family: var(--text-major);
-    font-size: 110%;
+    font-size: 2.5rem;
     color: var(--primarycolor);
     text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
 }
@@ -98,11 +104,20 @@ nav li:first-child {
     nav {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 1rem;
     }
     nav li:first-child {
-        flex-basis: auto;
         text-align: left;
+        flex-basis: auto;
         margin-right: auto;
+        font-size: 250%;
+    }
+    nav ul {
+        column-gap: 2rem;
+    }
+
+    .company-name {
+        font-size: 2rem;
     }
 
 }
@@ -125,19 +140,96 @@ nav li:first-child {
     border-radius: 10px;
 }
 
-.section-major {
+
+.main-text {
     text-align: center;
-    max-width: 700px;
+    max-width: 1000px;
     margin: auto;
+}
+
+.main-text h2 {
     font-family: var(--text-major);
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--primarycolor);
     text-shadow: 0 0 1px black, 0 0 1px black , 0 0 1px black , 0 0 1px black;
 }
 
-.section-minor {
-    max-width: 1000px;
-    margin: auto;
+/* Item Grid */
+.section-header{
+    text-align: center;
+    font-size: 1.8rem;
+    border-bottom: solid 3px var(--secondarycolor);
+    padding: 10px 0px;
+    margin: 20px;
+}
+
+.item-section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    gap: 30px;
+}
+
+@media (max-width: 1200px){
+    .item-grid{
+        justify-content: space-between;
+    }
+    .item-section{
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 800px){
+    .item-grid{
+        justify-content: center;
+    }
+    .item-section{
+        max-width: 400px;
+    }
+}
+
+/* Item Figures */
+
+.item-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--accentcolor);
+}
+
+.item-info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 300px;
+}
+
+.item-name{
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 100, 200);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-description{
+    flex-basis: 80%;
+    flex-shrink: 1;
+}
+
+.item-cost{
+    font-weight: bold;
+    color: red;
+    flex-basis: 20%;
+    flex-shrink: 2;
+    text-align: end;
 }
 
 /* Footer */

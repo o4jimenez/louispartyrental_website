@@ -4,232 +4,240 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Montserrat&display=swap" rel="stylesheet"> 
+
     <title>Louis Party Rental</title>
+
     <script src="jquery.js"></script>
-    <link rel="stylesheet" href="/css/standard.css">
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
 
-    <header >
-        <div class="banner">(805) 915-7089</div>
+    <header>
+        <div class="banner"><h3 id="banner-text">(805) 915-7089</h3></div>
+        <div class="nav-container">
         <nav>
-            <div id="company-name">
-                <h1>Louis Party Rentals</h1>
-            </div>
-            <div>
-                <ul id="header-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="current-page" href="catalog.html">Catalog</a></li>
-                    <li><a href="contact_page.html">Contact Us</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><h1><a href="#home-image" class="company-name">Louis Party Rental</a></h1></a></li>
+                <li><a class="current-page" href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact_page.html">Contact Us</a></li>
+            </ul>
         </nav>
+        </div>
     </header>
 
     <main>
     <div id="catelog">
 
-    <h2 class="section-header" for="jumper-section">Jumpers</h2>
-    <section id="jumper-section">
-        <summary hidden>Jumpers</summary>
-        <div class="item-grid jumpers_container">
-            <div class="item jumpers"
-                <div class="item-image"><img src="images/jumper_blue_11.jpeg" alt="11ft blue castle jumper"></div>
-                <div class="item-info">
-                    <div class="item-name">Blue Castle #1</div>
-                    <div class="item-description">11ft W x 11ft L </div>
-                    <div class="item-cost">$70</div>
-                </div>
+    <div class="item-section">
+        <h2 class="section-header" for="jumper-section">Jumpers</h2>
+        <section id="jumper-section" aria-expanded="true" tabindex="0">
+            <div class="item-grid jumpers_container">
+                <figure class="item jumpers">
+                    <div class="item-image"><img src="images/jumper_blue_11.jpeg" alt="11ft blue castle jumper"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Blue Castle #1</div>
+                        <div class="item-description">11ft W x 11ft L </div>
+                        <div class="item-cost">$70</div>
+                    </figcaption>
+                </figure>
+                <figure class="item jumpers">
+                    <div class="item-image"><img src="images/jumper_blue_13.jpeg" alt="13ft blue castle jumper"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Blue Castle #2</div>
+                        <div class="item-description">13ft W x 13ft L</div>
+                        <div class="item-cost">$70</div>
+                    </figcaption>
+                </figure>
+                <figure class="item jumpers">
+                    <div class="item-image"><img src="images/jumper_pink_11.jpeg" alt="11ft pink castle jumper"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Pink Castle #1</div>
+                        <div class="item-description">11ft W x 11ft L </div>
+                        <div class="item-cost">$70</div>
+                    </figcaption>
+                </figure>
+                <figure class="item jumpers">
+                    <div class="item-image"> <img src="images/jumper_pink_13.jpeg" alt="13ft pink castle jumper"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Pink Castle #2</div>
+                        <div class="item-description">13ft W x 13ft L </div>
+                        <div class="item-cost">$70</div>
+                    </figcaption>
+                </figure>
+                <figure class="item jumpers">
+                    <div class="item-image"> <img src="images/jumper_combo.jpeg" alt="Castle jumper with slide"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Combo Slide</div>
+                        <div class="item-description">16ft W x 24ft L </div>
+                        <div class="item-cost">$110</div>
+                    </figcaption>
+                </figure>
+                <figure class="item jumpers">
+                    <div class="item-image"><img src="images/jumper_jungle.jpeg" alt="Jungle theme jumper"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Jungle</div>
+                        <div class="item-description">13ft W x 13ft L </div>
+                        <div class="item-cost">$70</div>
+                    </figcaption>
+                </figure>
+                <figure class="item jumpers">
+                    <div class="item-image"><img src="images/jumper_sport.jpeg" alt="Sports theme jumper"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Sports Theme</div>
+                        <div class="item-description">13ft W x 13ft L </div>
+                        <div class="item-cost">$70</div>
+                    </figcaption>
+                </figure>
+                <figure class="item jumpers">
+                    <div class="item-image"><img src="images/waterslide_blue.jpeg" alt="Waterslide"></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Waterslide</div>
+                        <div class="item-description">10ft H x 13ft W x 22ft L</div>
+                        <div class="item-cost">$170</div>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="item jumpers">
-                <div class="item-image"><img src="images/jumper_blue_13.jpeg" alt="13ft blue castle jumper"></div>
-                <div class="item-info">
-                    <div class="item-name">Blue Castle #2</div>
-                    <div class="item-description">13ft W x 13ft L</div>
-                    <div class="item-cost">$70</div>
-                </div>
-            </div>
-            <div class="item jumpers">
-                <div class="item-image"><img src="images/jumper_pink_11.jpeg" alt="11ft pink castle jumper"></div>
-                <div class="item-info">
-                    <div class="item-name">Pink Castle #1</div>
-                    <div class="item-description">11ft W x 11ft L </div>
-                    <div class="item-cost">$70</div>
-                </div>
-            </div>
-            <div class="item jumpers">
-                <div class="item-image"> <img src="images/jumper_pink_13.jpeg" alt="13ft pink castle jumper"></div>
-                <div class="item-info">
-                    <div class="item-name">Pink Castle #2</div>
-                    <div class="item-description">13ft W x 13ft L </div>
-                    <div class="item-cost">$70</div>
-                </div>
-            </div>
-            <div class="item jumpers">
-                <div class="item-image"> <img src="images/jumper_combo.jpeg" alt="Castle jumper with slide"></div>
-                <div class="item-info">
-                    <div class="item-name">Combo Slide</div>
-                    <div class="item-description">16ft W x 24ft L </div>
-                    <div class="item-cost">$110</div>
-                </div>
-            </div>
-            <div class="item jumpers">
-                <div class="item-image"><img src="images/jumper_jungle.jpeg" alt="Jungle theme jumper"></div>
-                <div class="item-info">
-                    <div class="item-name">Jungle</div>
-                    <div class="item-description">13ft W x 13ft L </div>
-                    <div class="item-cost">$70</div>
-                </div>
-            </div>
-            <div class="item jumpers">
-                <div class="item-image"><img src="images/jumper_sport.jpeg" alt="Sports theme jumper"></div>
-                <div class="item-info">
-                    <div class="item-name">Sports Theme</div>
-                    <div class="item-description">13ft W x 13ft L </div>
-                    <div class="item-cost">$70</div>
-                </div>
-            </div>
-            <div class="item jumpers">
-                <div class="item-image"><img src="images/waterslide_blue.jpeg" alt="Waterslide"></div>
-                <div class="item-info">
-                    <div class="item-name">Waterslide</div>
-                    <div class="item-description">10ft H x 13ft W x 22ft L</div>
-                    <div class="item-cost">$170</div>
-                </div>
-            </div>
+        </section>
+    </div>
 
-        </div>
+    <div class="item-section">
+        <h2 class="section-header" for="table-chair-section">Tables</h2>
+        <section id="table-chair-section" aria-expanded="true" tabindex="0">
+            <div class="item-grid chair-table-container">
+                <figure class="item">
+                    <div class="item-image"><img src="images/table_rectangle_6.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Rectangular Tables</div>
+                        <div class="item-description">6ftx2ft</div>
+                        <div class="item-cost">$5</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/table_round_60.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Large Round Table</div>
+                        <div class="item-description">60in diameter, seats 10</div>
+                        <div class="item-cost">$7</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/table_round_48.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Small Round Table</div>
+                        <div class="item-description">48in diameter, seats 6</div>
+                        <div class="item-cost">$5</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/table_chair_kids.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Kids Chairs & Tables</div>
+                        <div class="item-description">TODO: separate</div>
+                        <div class="item-cost">$5</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/chair_white.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">White Folding Chair</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$1.00</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/chair_beige.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Biege Folding Chair</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$0.75</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
 
-    </section>
+    <div class="item-section">
+        <h2 class="section-header" for="tent-section">Tent & Canopies</h2>
+        <section id="tent-section" aria-expanded="true" tabindex="0">
+            <div class="item-grid tent-container">
+                <figure class="item">
+                    <div class="item-image"><img src="images/tent_12x20.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">12ftx20ft Tent</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$100</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/tent_12x30.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">12ftx30ft Tent</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$125</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/tent_20x30.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">20ftx30ft Tent</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$150</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/canopy.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">13ftx13ft Canopy</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$35</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
 
-    <h2 class="section-header" for="table-chair-section">Tables</h2>
-    <section  id="table-chair-section">
-        <div class="item-grid chair-table-container">
-            <div class="item">
-                <div class="item-image"><img src="images/table_rectangle_6.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Rectangular Tables</div>
-                    <div class="item-description">6ftx2ft</div>
-                    <div class="item-cost">$5</div>
-                </div>
+    <div class="item-section">
+        <h1 class="section-header" for="other-section">Other Items</h1>
+        <section id="other-section" aria-expanded="true" tabindex="-1">
+            <div class="item-grid tent-container">
+                <figure class="item">
+                    <div class="item-image"><img src="images/patio_heater.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Patio Heater</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$64</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/snowcone_machine.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Snowcone Machine</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$49</div>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <div class="item-image"><img src="images/portable_bathroom.jpeg" alt=""></div>
+                    <figcaption class="item-info">
+                        <div class="item-name">Portable Bathroom</div>
+                        <div class="item-description"></div>
+                        <div class="item-cost">$99</div>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="item">
-                <div class="item-image"><img src="images/table_round_60.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Large Round Table</div>
-                    <div class="item-description">60in diameter, seats 10</div>
-                    <div class="item-cost">$7</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/table_round_48.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Small Round Table</div>
-                    <div class="item-description">48in diameter, seats 6</div>
-                    <div class="item-cost">$5</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/table_chair_kids.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Kids Chairs & Tables</div>
-                    <div class="item-description">TODO: separate</div>
-                    <div class="item-cost">$5</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/chair_white.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">White Folding Chair</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$1.00</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/chair_beige.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Biege Folding Chair</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$0.75</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <h2 class="section-header" for="tent-section">Tent & Canopies</h2>
-    <section id="tent-section">
-        <div class="item-grid tent-container">
-            <div class="item">
-                <div class="item-image"><img src="images/tent_12x20.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">12ftx20ft Tent</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$100</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/tent_12x30.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">12ftx30ft Tent</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$125</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/tent_20x30.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">20ftx30ft Tent</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$150</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/canopy.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">13ftx13ft Canopy</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$35</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <h2 class="section-header" for="other-section">Other Items</h2>
-    <section id="other-section">
-        <div class="item-grid tent-container">
-            <div class="item">
-                <div class="item-image"><img src="images/patio_heater.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Patio Heater</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$65</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/snowcone_machine.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Snowcone Machine</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$50</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image"><img src="images/portable_bathroom.jpeg" alt=""></div>
-                <div class="item-info">
-                    <div class="item-name">Portable Bathroom</div>
-                    <div class="item-description"></div>
-                    <div class="item-cost">$100</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
    </div>    
    </main>
 
-   <footer> Copyright © 2019 Louis Party Rental - All Rights Reserved.</footer> 
-
+   <footer>
+        <p><small>&copy; 2019 Louis Party Rental - All Rights Reserved.</small></p>
+    </footer>
+    
    <script src="script.js"></script>
 </body>
 </html>

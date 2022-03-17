@@ -29,6 +29,7 @@ function openSection(){
     var a = $(this).attr('for');
     var section = $('#'+a);
     section.attr('hidden', !(section.attr('hidden')));
+    section.attr('aria-expanded', !(section.attr('aria-expanded')));
 }
 
 $('.section-header').on('click', openSection);
