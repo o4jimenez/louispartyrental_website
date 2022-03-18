@@ -54,11 +54,20 @@ a:hover {
 /* Navigation */
 
 .banner {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
     text-align: center;
     margin: 0 auto;
     padding: 0.225rem;
     font-size: 70%;
     background-color: var(--accentcolor);
+}
+
+.banner a {
+    color: black;
+
 }
 
 nav {
