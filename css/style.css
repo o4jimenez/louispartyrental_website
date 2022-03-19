@@ -9,6 +9,7 @@
     --primarycolor: #df3f4f;
     --secondarycolor: #3541ad;
     --accentcolor: #fabc36;
+    --dimaccentcolor: #f5de92;
     /*
     --primarycolor: #d63b4b;
     --accentcolor: rgb(57, 69, 185);
@@ -16,6 +17,9 @@
     */
 
     --font-size: 1.3rem;
+    --phone-width: 400px;
+    --tablet-width: 840px;;
+    --desktop-width: 1260px;
 }
 
 /* General */
@@ -55,19 +59,34 @@ a:hover {
 
 .banner {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
     text-align: center;
     margin: 0 auto;
-    padding: 0.225rem;
+    padding: 3px 10px;
     font-size: 70%;
+    max-width: var(--phone-width);
+}
+
+.banner-container {
     background-color: var(--accentcolor);
+    margin: auto;
+}
+
+@media (min-width: 840px ){
+    .banner {
+        max-width: var(--tablet-width);
+    }
+}
+@media (min-width: 1260px ){
+    .banner {
+        max-width: var(--desktop-width);
+    }
 }
 
 .banner a {
     color: black;
-
 }
 
 nav {
@@ -109,9 +128,9 @@ nav li:first-child {
     text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
 }
 
-@media (min-width: 850px){
+@media (min-width: 840px){
     nav {
-        max-width: 1200px;
+        max-width: 840px;
         margin: 0 auto;
         padding: 1rem;
     }
@@ -129,6 +148,12 @@ nav li:first-child {
         font-size: 2rem;
     }
 
+}
+
+@media (min-width: 1260px){
+    nav {
+        max-width: 1260px;
+    }
 }
 
 
@@ -173,7 +198,7 @@ nav li:first-child {
 }
 
 .item-section{
-    max-width: 1200px;
+    max-width: 1260px;
     margin: 0 auto;
 }
 
@@ -184,16 +209,16 @@ nav li:first-child {
     gap: 30px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1260px){
     .item-grid{
         justify-content: space-between;
     }
     .item-section{
-        max-width: 800px;
+        max-width: 840px;
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 840px){
     .item-grid{
         justify-content: center;
     }
@@ -204,12 +229,17 @@ nav li:first-child {
 
 /* Item Figures */
 
-.item-image img {
+.item {
+    display: flex;
+    flex-flow: column;
+
+    background-color: var(--accentcolor);
+    padding: 10px;
+}
+
+.item-image {
     width: 300px;
     height: 300px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: var(--accentcolor);
 }
 
 .item-info{
@@ -218,6 +248,9 @@ nav li:first-child {
     justify-content: space-between;
     align-items: stretch;
     max-width: 300px;
+    padding: 10px 20px;
+
+    background-color: var(--background);
 }
 
 .item-name{
@@ -231,6 +264,7 @@ nav li:first-child {
 .item-description{
     flex-basis: 80%;
     flex-shrink: 1;
+    font-size: 80%;
 }
 
 .item-cost{
