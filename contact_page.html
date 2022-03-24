@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/standard.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/contact_style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="contact-page">
     <header>
-        <div class="banner">(805) 915-7089</div>
-        <nav>
-            <div id="company-name"><h1>Louis Party Rental</h1></div>
-            <div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="catalog.html">Catalog</a></li>
-                    <li><a class="current-page" href="contact-page.html">Contact Us</a></li>
-                </ul>
+        <div class="banner-container">
+            <div class="banner">
+                <h3 id="banner-text">(805) 915-7089</h3>
+                <a href="catalog_sp.html"><span lang="es">En Español</span></a>
             </div>
+        </div>
+        <div class="nav-container">
+        <nav>
+            <ul>
+                <li><h1><a href="#home-image" class="company-name">Louis Party Rental</a></h1></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Rentals</a></li>
+                <li><a class="current-page" href="contact_page.html">Contact Us</a></li>
+            </ul>
         </nav>
+        </div>
     </header>
 
     <main>
+        <div id="form-container">
         <section class="email-form">
             <h2 class="section-header">Email</h2>
+
             <label for="contact-form"></label>
             <form action="https://formsubmit.co/cf03ce248f1ef52c4335ae0ffdbf77f4" method="POST" id="contact-form">
                 <div class="form-input">
@@ -58,16 +65,17 @@
                 </div>
             </form> 
         </section>
+        </div>
+
         <section class="company-info">
-           <p>Call or Text</p> 
-           <p>Louis Party Rental</p>
+           <h2>Call or Text</h2> 
            <p>(805) 915-7089</p>
         </section>
 
     </main>
 
     <footer>
-        <div>Copyright © 2019 Louis Party Rental - All Rights Reserved.</div>
+        <p><small>&copy; 2019 Louis Party Rental - All Rights Reserved.</small></p>
     </footer>
 
     <script src="script.js"></script> 

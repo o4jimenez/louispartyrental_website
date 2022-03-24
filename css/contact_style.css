@@ -1,15 +1,24 @@
 form{
     display: flex;
     flex-flow: column nowrap;
+
+    padding: 20px;
+}
+
+#form-container {
     max-width: 500px;
     margin: auto;
-    padding: 10px;
-    border-radius: 5px;
+}
+
+@media (min-width: 860px){
+    #form-container {
+        max-width: 1000px
+    }
 }
 
 
 input{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(224, 224, 224);
     border: none;
     width: 70%;
     font-size: 1rem;
@@ -37,6 +46,7 @@ label{
 
 .form-submit{
     align-self: center;
+    margin-top: 2rem;
 }
 
 .flat-button{
@@ -54,5 +64,5 @@ label{
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 100px;
+    padding: 4rem 0;
 }
