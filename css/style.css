@@ -119,7 +119,8 @@ nav li:first-child{
 
 nav a {
     text-decoration: none;
-    color: var(--accentcolor)
+    color: var(--accentcolor);
+    display: block;
 }
 
 nav a:hover, nav a:focus {
