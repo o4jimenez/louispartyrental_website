@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Montserrat&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/contact_style.css">
+
     <title>Document</title>
 </head>
 <body>
-    <div class="contact-page">
     <header>
         <div class="banner-container">
             <div class="banner">
-                <h3 id="banner-text">(805) 915-7089</h3>
-                <a href="catalog_sp.html"><span lang="es">En Español</span></a>
+                <p id="banner-text">(805) 915-7089</p>
+                <a href="contact.html"><span lang="es">In English</span></a>
             </div>
         </div>
         <div class="nav-container">
         <nav>
             <ul>
-                <li><h1><a href="#home-image" class="company-name">Louis Party Rental</a></h1></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Rentals</a></li>
-                <li><a class="current-page" href="contact_page.html">Contact Us</a></li>
+                <li><h1>Louis Party Rental</h1></li>
+                <li><a href="index_sp.html">Principal</a></li>
+                <li><a href="catalog_sp.html">Mercancías</a></li>
+                <li><a class="current-page" href="contact_sp.html">Contactar</a></li>
             </ul>
         </nav>
         </div>
@@ -37,38 +38,38 @@
             <label for="contact-form"></label>
             <form action="https://formsubmit.co/cf03ce248f1ef52c4335ae0ffdbf77f4" method="POST" id="contact-form">
                 <div class="form-input">
-                    <label for="name">Name:</label>
+                    <label for="name">Nombre: * </label>
                     <input id="name" type="text" name="name" required>
                 </div>
                 <div class="form-input">
-                    <label for="date">Date: </label>
-                    <input id="date" type="text" name="date" required>
+                    <label for="date">Fecha de Evento: *</label>
+                    <input id="date" type="date" name="date" required>
                 </div>
                 <div class="form-input">
-                    <label for="email">Email: </label>
-                    <input id="email" type="email" name="email" required>
-                </div>
-                <div class="form-input">
-                    <label for="phone">Phone: </label>
+                    <label for="phone">Tele: *</label>
                     <input id="phone" type="text" name="phone" required>
                 </div>
                 <div class="form-input">
-                    <label for="address">Address:</label>
-                    <input id="address" type="text" name="address" required>
+                    <label for="email">Email: *</label>
+                    <input id="email" type="email" name="email" required>
                 </div>
                 <div class="form-input">
-                    <label for="message">Message: </label>
-                    <input id="message" type="text" name="message" required>
+                    <label for="address">Dirección de entrega: </label>
+                    <input id="address" type="text" name="address">
+                </div>
+                <div class="form-input">
+                    <label for="message">Mensaje: </label>
+                    <input id="message" type="text" name="message">
                 </div>
                 <div class="form-submit">
-                    <button class="flat-button" type="submit">Send</button>
+                    <button class="flat-button" type="submit">Enviar</button>
                 </div>
             </form> 
         </section>
         </div>
 
         <section class="company-info">
-           <h2>Call or Text</h2> 
+           <h2>Llama o Envía texto</h2> 
            <p>(805) 915-7089</p>
         </section>
 
@@ -79,6 +80,5 @@
     </footer>
 
     <script src="script.js"></script> 
-    </div>
 </body>
 </html>
