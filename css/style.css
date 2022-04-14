@@ -77,10 +77,11 @@ h1, h2, h3 {
     margin: 0.25rem;
 }
 
-@media (min-width: 700px ){
+@media (min-width: 720px ){
     .banner {
-        max-width: var(--desktop-width);
+        max-width: 1280px;
         margin: auto;
+        padding: 3px 40px;
     }
 }
 
@@ -131,11 +132,11 @@ nav a:hover, nav a:focus {
     text-decoration: underline;
 }
 
-@media (min-width: 700px){
+@media (min-width: 720px){
     nav {
         margin: 0 auto;
-        padding: 1rem;
-        max-width: var(--desktop-width);
+        padding: 1rem 40px;
+        max-width: 1280px;
     }
     nav ul {
         column-gap: 2rem;
