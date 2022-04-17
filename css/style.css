@@ -3,18 +3,14 @@
     --text-major: "Dosis", arial, sans-serif;
     --text-main: "Montserrat", verdana, sans-serif;
 
-    --background: rgb(248, 248, 242);
-    --secondarybackground: rgb(230, 230, 230);
+    --background: hsl(60, 30%, 96%);
+    --secondarybackground: hsl(0, 0%, 90%);
 
-    --primarycolor: #df3f4f;
-    --secondarycolor: #3541ad;
-    --accentcolor: #fabc36;
-    --dimaccentcolor: #f5de92;
-    /*
-    --primarycolor: #d63b4b;
-    --accentcolor: rgb(57, 69, 185);
-    --secondarycolor: #fabc36;
-    */
+    --primarycolor: hsl(338, 70%, 51%);
+    --secondarycolor: hsl(234, 53%, 44%);
+    --accentcolor: hsl(37, 96%, 59%);
+    --dimaccentcolor: hsl(50, 96%, 59%);
+
 
     --font-size: 1.3rem;
     --phone-width: 400px;
@@ -120,12 +116,12 @@ nav li:first-child{
 
 nav a {
     text-decoration: none;
-    color: var(--accentcolor);
+    color: var(--dimaccentcolor);
     display: block;
 }
 
 nav a:hover, nav a:focus {
-    color: var(--primarycolor);
+    color: var(--accentcolor);
 }
 
 .current-page {
