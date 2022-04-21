@@ -6,7 +6,7 @@
     --background: hsl(60, 30%, 96%);
     --secondarybackground: hsl(0, 0%, 90%);
 
-    --primarycolor: hsl(338, 70%, 51%);
+    --primarycolor: #C72A64;
     --secondarycolor: hsl(234, 53%, 44%);
     --accentcolor: hsl(37, 96%, 59%);
     --dimaccentcolor: hsl(50, 96%, 59%);
@@ -176,8 +176,10 @@ main {
 /* Item Grid */
 
 .section-header{
+    font-family: var(--text-major);
+    color: var(--primarycolor);
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     border-bottom: solid 3px var(--secondarycolor);
     padding: 10px 0px;
 
@@ -186,7 +188,7 @@ main {
 }
 
 .item {
-    margin: auto
+    margin: auto;
 }
 
 .item-grid {
@@ -218,6 +220,7 @@ main {
     width: 300px;
     height: 300px;
     margin-bottom: -5px;
+    border: 2px solid var(--accentcolor);
 }
 
 .item-info{
@@ -228,13 +231,17 @@ main {
     padding: 10px 10px;
 
     border: 2px solid var(--accentcolor);
+    border-top: 0;
 
 }
 
 .item-name{
     width: 100%;
     text-align: center;
+    /*
     color: rgb(0, 100, 200);
+    */
+    color: var(--secondarycolor);
     font-weight: bold;
     margin-bottom: 10px;
 }
