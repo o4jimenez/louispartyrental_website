@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <title>Louis Party Rental</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner-container">
+        <div class="banner">
+          <p id="banner-text">(805) 915-7089</p>
+          <a href="contact_sp.html"><span lang="es">En Español</span></a>
+        </div>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li><h1>Louis Party Rental</h1></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Rentals</a></li>
+            <li><a class="current-page" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div id="form-container">
+        <section class="email-form">
+          <h2 class="section-header">Email</h2>
+
+          <label for="contact-form"></label>
+          <form
+            action="https://formsubmit.co/60d1aa45d556a34594c8c74ace8e8295"
+            method="POST"
+            id="contact-form"
+          >
+            <div class="form-input">
+              <label for="name">Name: * </label>
+              <input id="name" type="text" name="name" required />
+            </div>
+            <div class="form-input">
+              <label for="date">Date of Event: *</label>
+              <input id="date" type="date" name="date" required />
+            </div>
+            <div class="form-input">
+              <label for="phone">Phone: *</label>
+              <input id="phone" type="text" name="phone" required />
+            </div>
+            <div class="form-input">
+              <label for="email">Email: *</label>
+              <input id="email" type="email" name="email" required />
+            </div>
+            <div class="form-input">
+              <label for="address">Delivery Address: </label>
+              <input id="address" type="text" name="address" />
+            </div>
+            <div class="form-input">
+              <label for="message">Message: </label>
+              <input id="message" type="text" name="message" />
+            </div>
+            <div class="form-submit">
+              <button class="flat-button" type="submit">Send</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <section class="company-info">
+        <h2>Call or Text</h2>
+        <p>(805) 915-7089</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <small>&copy; 2019 Louis Party Rental - All Rights Reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>

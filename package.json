@@ -1,0 +1,37 @@
+{
+  "name": "louispartyrental_website",
+  "version": "2.0.0",
+  "description": "Louis Party Rental Marketing Website",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.{js,jsx,html}\" ",
+    "format:checK": "prettier --check \"src/**/*.{js,jsx,html}\" ",
+    "dev": "parcel src/html/index.html",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o4jimenez/louispartyrental_website.git"
+  },
+  "author": "Oscar Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o4jimenez/louispartyrental_website/issues"
+  },
+  "homepage": "https://github.com/o4jimenez/louispartyrental_website#readme",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.30.0",
+    "parcel": "^2.5.0",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "browserslist": [
+    "last 2 Firefox versions"
+  ]
+}
