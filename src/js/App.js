@@ -1,9 +1,12 @@
 import React from "react";
 import { createRoot } from "react-dom";
 
+import Header from "./Header";
+import ItemSection from "./ItemSection";
+
 const data = [
   {
-    category: "jumpers",
+    category: "Jumpers",
     items: [
       {
         imageUrl: "/images/jumper_blue_11.jpg",
@@ -200,56 +203,6 @@ const data = [
   },
 ];
 
-const ItemImage = (props) => {
-  return <img className="item-image" src={props.imageUrl} alt="" />;
-};
-
-const ItemCaption = (props) => {
-  return (
-    <figcaption className="item-info">
-      <div className="item-name">{props.itemName}</div>
-      <div className="item-description">{props.itemDescription}</div>
-      <div className="item-cost">{props.itemCost}</div>
-    </figcaption>
-  );
-};
-
-const Item = (props) => {
-  return (
-    <figure className="item">
-      <ItemImage key={props.imageUrl} imageUrl={props.imgUrl} />
-
-      <ItemCaption
-        key={props.itemInfo.itemName}
-        itemName={props.itemInfo.itemName}
-        itemDescription={props.itemInfo.itemDescription}
-        itemCost={props.itemInfo.itemCost}
-      />
-    </figure>
-  );
-};
-
-const ItemSection = (props) => {
-  return (
-    <div className="item-section">
-      <h2 className="section-header">{props.sectionName}</h2>
-      <section className="grid-container">
-        <div className="item-grid">
-          {props.sectionItems.map((item) => {
-            return (
-              <Item
-                key={item.imageUrl}
-                imgUrl={item.imageUrl}
-                itemInfo={item.itemInfo}
-              />
-            );
-          })}
-        </div>
-      </section>
-    </div>
-  );
-};
-
 const Catalog = () => {
   return (
     <div id="catalog">
@@ -266,11 +219,6 @@ const Catalog = () => {
   );
 };
 
-createRoot(document.getElementById("catalog")).render(<Catalog />);
-
-/*
-ReactDOM.render(
-  React.createElement(Catalog),
-  document.getElementById("catalog")
-);
-*/
+//createRoot(document.getElementById("catalog")).render(<Catalog />);
+createRoot(document.getElementById("header")).render(<Header />);
+createRoot(document.getElementById("body")).render(<Catalog />);

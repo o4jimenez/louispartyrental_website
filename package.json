@@ -2,13 +2,13 @@
   "name": "louispartyrental_website",
   "version": "2.0.0",
   "description": "Louis Party Rental Marketing Website",
-  "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\" ",
     "format:checK": "prettier --check \"src/**/*.{js,jsx,html}\" ",
     "dev": "parcel src/html/index.html",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet "
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet ",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
