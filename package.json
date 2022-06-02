@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\" ",
     "format:checK": "prettier --check \"src/**/*.{js,jsx,html}\" ",
-    "dev": "parcel src/html/index.html",
+    "dev": "parcel index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet ",
     "build": "parcel build"
   },
