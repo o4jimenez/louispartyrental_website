@@ -17,7 +17,7 @@ const data = [
         },
       },
       {
-        imageUrl: "/images/jumper_blue_13.jpeg",
+        imageUrl: "images/jumper_blue_11.jpeg",
         itemInfo: {
           itemName: "Blue Castle #2",
           itemDescription: "13ft W x 13ft L",
@@ -25,7 +25,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/jumper_pink_11",
+        imageUrl: "./images/jumper_blue_11",
         itemInfo: {
           itemName: "Pink Castle #1",
           itemDescription: "11ft W x 11ft L",
@@ -33,7 +33,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/jumper_pink_13.jpeg",
+        imageUrl: "/images/jumper_pink_13.jpeg",
         itemInfo: {
           itemName: "Pink Castle #2",
           itemDescription: "13ft W x 13ft L ",
@@ -41,7 +41,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/jumper_combo.jpeg",
+        imageUrl: "images/jumper_pink_13.jpeg",
         itemInfo: {
           itemName: "Combo Slide",
           itemDescription: "16ft W x 24ft L ",
@@ -49,7 +49,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/jumper_jungle.jpeg",
+        imageUrl: "./images/jumper_pink_13.jpeg",
         itemInfo: {
           itemName: "Jungle",
           itemDescription: "13ft W x 13ft L ",
@@ -57,7 +57,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/jumper_sport.jpeg",
+        imageUrl: "./images/jumper_blue_13.jpeg",
         itemInfo: {
           itemName: "Sports",
           itemDescription: "13ft W x 13ft L ",
@@ -65,7 +65,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/waterslide.jpeg",
+        imageUrl: "images/jumper_blue_13.jpeg",
         itemInfo: {
           itemName: "Waterslide",
           itemDescription: "10ft H x 13ft W x 22ft L",
