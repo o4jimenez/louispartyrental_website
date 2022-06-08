@@ -3,13 +3,30 @@ import { createRoot } from "react-dom";
 
 import Header from "./Header";
 import ItemSection from "./ItemSection";
-
+/*
 const data = [
   {
     category: "Jumpers",
     items: [
       {
-        imageUrl: "/images/jumper_blue_11.jpg",
+        imageUrl: "./images/jumper_blue_11.jpeg",
+        itemInfo: {
+          itemName: "Blue Castle #1",
+          itemDescription: "111ft W x 11ft L ",
+          itemCost: "$70",
+        },
+      },
+    ],
+  },
+];
+*/
+const data = [
+  {
+    category: "Jumpers",
+    items: [
+      {
+        imageUrl:
+          "https://d33wubrfki0l68.cloudfront.net/ef82b88d3efcc4d2564289ac7cfcec659892e598/df3c6/images/jumper_blue_11.jpeg",
         itemInfo: {
           itemName: "Blue Castle #1",
           itemDescription: "111ft W x 11ft L ",
@@ -17,7 +34,7 @@ const data = [
         },
       },
       {
-        imageUrl: "images/jumper_blue_11.jpeg",
+        imageUrl: "%PUBLIC_URL%/images/jumper_blue_11.jpeg",
         itemInfo: {
           itemName: "Blue Castle #2",
           itemDescription: "13ft W x 13ft L",
@@ -49,7 +66,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/jumper_pink_13.jpeg",
+        imageUrl: "./public/images/jumper_pink_13.jpeg",
         itemInfo: {
           itemName: "Jungle",
           itemDescription: "13ft W x 13ft L ",
@@ -57,7 +74,7 @@ const data = [
         },
       },
       {
-        imageUrl: "./images/jumper_blue_13.jpeg",
+        imageUrl: "public/images/jumper_blue_13.jpeg",
         itemInfo: {
           itemName: "Sports",
           itemDescription: "13ft W x 13ft L ",
@@ -65,7 +82,7 @@ const data = [
         },
       },
       {
-        imageUrl: "images/jumper_blue_13.jpeg",
+        imageUrl: "/public/images/jumper_blue_13.jpeg",
         itemInfo: {
           itemName: "Waterslide",
           itemDescription: "10ft H x 13ft W x 22ft L",

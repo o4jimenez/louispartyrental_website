@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\" ",
     "format:checK": "prettier --check \"src/**/*.{js,jsx,html}\" ",
-    "dev": "parcel index.html",
+    "dev": "parcel public/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet ",
     "build": "parcel build"
   },
@@ -28,7 +28,8 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "parcel": "^2.5.0",
-    "prettier": "2.6.2"
+    "prettier": "2.6.2",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.1.0",
