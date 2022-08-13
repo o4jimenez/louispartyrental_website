@@ -1,25 +1,11 @@
+require("file-loader?name=[name].[ext]!./index.html");
+
 import React from "react";
 import { createRoot } from "react-dom";
 
 import Header from "./Header";
 import ItemSection from "./ItemSection";
-/*
-const data = [
-  {
-    category: "Jumpers",
-    items: [
-      {
-        imageUrl: "./images/jumper_blue_11.jpeg",
-        itemInfo: {
-          itemName: "Blue Castle #1",
-          itemDescription: "111ft W x 11ft L ",
-          itemCost: "$70",
-        },
-      },
-    ],
-  },
-];
-*/
+
 const data = [
   {
     category: "Jumpers",
